@@ -941,12 +941,32 @@ header {
     align-items: center;
    
     .col-12{
-   padding: 4rem;
-    .card{
-      height: auto;
-      position: relative;
-      .card-body{
-        padding: 3rem 3.5rem;
+      .table-responsive{
+        margin-top: 2rem;
+        tr{
+          vertical-align: middle;
+          text-align: center;
+        }
+       
+        
+        tbody{
+          tr:first-child{
+            td{
+              font-weight: 600;
+              padding: 2rem;
+              font-size: calc(var(--h3-fontsize) - 2.5px);
+            }
+          }
+          th{
+            font-weight: 400;
+          }
+          td{
+            padding: 2rem;
+          }
+        }
+      }
+   
+    
         
         .popular{
           position: absolute;
@@ -961,139 +981,14 @@ header {
           background-color: var(--color-primary);
           font-size: var(--h5-fontsize);
         }
-        h3{
-          font-size: calc(var(--h2-fontsize) - .3rem);
-          text-align: center;
-        }
-        .pricing-box{
-          border: 1px solid #dedcdc70;
-          border-radius: 15px;
-          width: fit-content;
-          background-color: #7ca1c71e;
-          margin: 1rem auto;
-          p{
-            padding: 0.3rem .8rem;
-            margin-bottom: 0;
-            color: #212020;
-            opacity: 0.6;
-            font-size: var(--h5-fontsize);
-          }
-        }
-        h4{
-          span{
-            font-size: calc(var(--h1-fontsize) + 0.3rem);
-            color: #000;
-          }
-          opacity: 0.5;
-          font-size: calc(var(--h5-fontsize) + .1rem);
-        }
-        hr {
-          margin: 1.5rem 0;
-          color: #9d6400;
-          border: 0;
-          border-top: var(--bs-border-width) solid;
-          opacity: .095;
-        }
-        p{
-          padding: .8rem 0 1rem;
-        }
-        ul{
-          list-style: none;
-          
-          li{
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            font-weight: 300;
-            padding-bottom: .8rem;
-            span{
-             
-             .bi-check-circle-fill{
-              color: rgba(0, 128, 0, 0.734);
-                
-                
-              }
-              .bi-x-circle-fill{
-                color: rgba(255, 0, 0, 0.737);
-                
-              }
-            }
-            
-          }
-        }
-        .btn-all{
-          margin: 1.5rem 0 1rem;
-         
-         
+        
+        
         }
 
       }
     }
-    .corporate{
-      background-color: #264675;
-      color: #f2f2f2;
-      .card-body{
-        padding: 3rem 3.5rem;
-        h3{
-        
-          color: #fff;
-        }
-        .pricing-box{
-         
-          margin: 1rem auto 2.3rem;
-          p{
-            padding: 0.3rem .8rem;
-            margin-bottom: 0;
-            color: #fff;
-            opacity: 0.6;
-            font-size: var(--h5-fontsize);
-          }
-        }
-        h4{
-          span{
-            color: #fff;
-          }
-          opacity: 1;
-        }
-        hr {
-          
-          color: #fff;
-        
-          opacity: .195;
-        }
-        ul{
-          li{
-            color: #fff;
-            span{
-             
-              .bi-check-circle-fill{
-               color: #fff;
-                 
-                 
-               }
-               .bi-x-circle-fill{
-                 color: #fff;
-                 
-               }
-             }
-          }
-        }
-        p{
-          color: #fff;
-        }
-    }
-    &:hover{
-      transition: transform 0.5s ease-in-out;
+   
   
-          transform: scale(1.05);
-    }
-  }
   
-  }
-  @media(max-width: 991px){
-    .col-12{
-      padding: 2rem;
-    }
-  }
-}
-}
+ 
+
